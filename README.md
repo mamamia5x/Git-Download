@@ -28,7 +28,9 @@ Replace [Link to file] with the url of the zip file.
 Replace [Folder] with the desired location of the contents.
 
 ## Version History
-#### Current Version is V.0.1.1
+#### Current Version is V.0.1.2
+* V.0.1.2
+    * Added version.txt for testing.
 * V.0.1.1
     * Changed syntax
 * V.0.1.0

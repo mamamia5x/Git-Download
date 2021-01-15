@@ -1,4 +1,9 @@
 <?php
+$runningVersion = file_get_contents('../version.txt');
+$currentVersion = file_get_contents('https://github.com/mamamia5x/Git-Download/version.txt');
+if ($runningVersion !== $currentVersion){
+    echo("Different Versions Found"); # I'm just testing this version
+ }
 $runType = $argv[1]; 
 if ($runType == "zip"){
     $zipFile = file_get_contents($argv[2]);
