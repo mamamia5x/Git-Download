@@ -1,5 +1,5 @@
 <?php
-$runType = $argv[1];
+$runType = $argv[1]; 
 if ($runType == "zip"){
     $zipFile = file_get_contents($argv[2]);
     $location = $argv[3];

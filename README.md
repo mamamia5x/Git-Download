@@ -28,8 +28,9 @@ Replace [Link to file] with the url of the zip file.
 Replace [Folder] with the desired location of the contents.
 
 ## Version History
-#### Current Version is V.0.1.0
-
+#### Current Version is V.0.1.1
+* V.0.1.1
+    * Changed syntax
 * V.0.1.0
     * First working build of Git-Download.
     * Allows user to download zips and unzips them.
