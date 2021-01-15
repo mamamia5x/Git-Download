@@ -16,17 +16,23 @@ git clone https://github.com/mamamia5x/Git-Download.git
 cd Git-Download
 ```
 ## Usage
-To download files, run the command
-```bash
-php commands/index.php [Link to file] [Folder]
-```
+Commands: 
+* [`zip`](#zip) - allows the user to download and unzip a zip file.
 
-The link to file is the link where you can download the file.  
-Folder is desired folder to place files.
+### zip
+The zip command allows the user to downloand and unzip a zip file.
+```bash
+php commands/index.php zip [Link to file] [Folder]
+```
+Replace [Link to file] with the url of the zip file.  
+Replace [Folder] with the desired location of the contents.
 
 ## Version History
-#### Current Version is V.0.1.0
-
+#### Current Version is V.0.1.2
+* V.0.1.2
+    * Testing update
+* V.0.1.1
+    * Changed syntax
 * V.0.1.0
     * First working build of Git-Download.
     * Allows user to download zips and unzips them.
