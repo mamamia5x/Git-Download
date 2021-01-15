@@ -2,7 +2,7 @@
 Download zip files. Useful for a workaround against blocked downloads.
 
 ## Installation
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/mamamia5x/Git-Download)
 
 Running in Gitpod will install everything needed and run in browser.
 
