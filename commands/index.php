@@ -47,6 +47,6 @@ else {
 
 function update(){
     exec('cd ../');
-    exec('git checkout master');
+    exec('git restore -s master');
 }
 ?>
