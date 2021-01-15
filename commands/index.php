@@ -1,11 +1,17 @@
 <?php
 $runningVersion = file_get_contents('../version.txt');
-$currentVersion = file_get_contents('https://github.com/mamamia5x/Git-Download/version.txt');
+$currentVersion = file_get_contents('https://raw.githubusercontent.com/mamamia5x/Git-Download/main/version.txt');
 if ($runningVersion !== $currentVersion){
-    echo("Different Versions Found"); # I'm just testing this version
- }
+    echo ("You are running on $runningVersion\nThe current version is $currentVersion.");
+    echo ("You can update using the command 'php index.php update'");
+} else {
+    echo ("Running on " . $runningVersion);
+}
 $runType = $argv[1]; 
-if ($runType == "zip"){
+if ($runType == 'update'){
+    echo("Running this command will delete everything in here and reinstall it, make sure you have no other files in here");
+}
+else if ($runType == "zip"){
     $zipFile = file_get_contents($argv[2]);
     $location = $argv[3];
     if (strpos($location,'/') !== strlen($location)){
@@ -23,12 +29,12 @@ if ($runType == "zip"){
     // extract it to the path we determined above
     $zip->extractTo($path);
     $zip->close();
-    echo "Succesfully Downloaded!";
+    echo "\nSuccesfully Downloaded!";
     } else {
-    echo "An error occured";
+    echo "\nAn error occured";
     }
 }
 else {
-    echo "Error: Command not found.";
+    echo "\nError: Command not found.";
 }
 ?>
