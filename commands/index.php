@@ -5,7 +5,7 @@ if ($runningVersion !== $currentVersion){
     echo ("You are running on $runningVersion\nThe current version is $currentVersion.");
     echo ("You can update using the command 'php index.php update'");
 } else {
-    echo ("Running on " . $runningVersion);
+    echo ("Running on $runningVersion\n");
 }
 $runType = $argv[1]; 
 if ($runType == 'update'){
@@ -46,6 +46,6 @@ else {
 }
 
 function update(){
-    exec('git fetch HEAD');
+    exec('git checkout master');
 }
 ?>
