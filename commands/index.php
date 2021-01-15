@@ -46,6 +46,6 @@ else {
 }
 
 function update(){
-    exec('git -c http.sslVerify=false clone https://github.com/mamamia5x/Git-Download.git ../../Git-Download');
+    exec('git fetch HEAD');
 }
 ?>
