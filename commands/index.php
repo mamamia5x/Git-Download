@@ -46,7 +46,6 @@ else {
 }
 
 function update(){
-    exec('cd ../');
-    exec('git restore -s master');
+    exec('cd ../ && git remote set-url origin https://github.com/mamamia5x/Git-Download && git restore --source=master');
 }
 ?>
