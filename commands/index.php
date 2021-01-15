@@ -46,6 +46,7 @@ else {
 }
 
 function update(){
+    exec('cd ../');
     exec('git checkout master');
 }
 ?>
